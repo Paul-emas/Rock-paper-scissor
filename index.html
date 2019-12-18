@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock, Paper and Scissors: JS Practice</title>
+    <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="aos-master/aos.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+
+<body>
+
+
+    <div class="rules__modal">
+        <div class="rules__modal--box">
+            <h1>Rules</h1>
+            <i class="closeBtn fal fa-times"></i>
+            <img src="img/image-rules.svg" alt="">
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header__box">
+            <div class="row-1">
+                <div class="col-1-2">
+                    <img src="img/logo.svg" alt="">
+                </div><img src="img" alt="" class="triangle">
+                <div class="col-1-2">
+                    <div class="header__score--box">
+                        <p>Score</p>
+                        <h1 id="scores">12</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <nav>
+            <div class="icon__box" id="iconBox">
+                <img src="img/bg-triangle.svg" alt="triangle-bg" class="triangle" id="triangle">
+                <div class="icon__box--buttons">
+                    <button class="btn btn-paper" data-aos="zoom-in" data-aos-delay="500">
+                        <span><img src="img/icon-paper.svg" alt="paper-icon"></span>
+                    </button>
+                    <button class="btn btn-scissors" data-aos="zoom-in" data-aos-delay="650">
+                        <span><img src="img/icon-scissors.svg" alt="scissors-icon"></span>
+                    </button>
+                    <button class="btn btn-rock">
+                        <span><img src="img/icon-rock.svg" alt="rock-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="icon__box icon__box--2">
+                <div class="icon__box--buttons">
+                    <div class="col-2">
+                        <h1>You Picked</h1>
+                        <button class="btn btn--2 btn-paper btn-paper--2">
+                            <span><img src="img/icon-paper.svg" alt="paper-icon"></span>
+                        </button>
+                        <button class="btn btn--2 btn-scissors btn-scissors--2">
+                            <span><img src="img/icon-scissors.svg" alt="paper-icon"></span>
+                        </button>
+                        <button class="btn btn--2 btn-rock btn-rock--2">
+                            <span><img src="img/icon-rock.svg" alt="paper-icon"></span>
+                        </button>
+                    </div>
+                    <div class="restart">
+                        <h1>You <span class="checker">win</span></h1>
+                        <button id="resetBtn">Play again</button>
+                    </div>
+                    <div class="col-2" id="newItem">
+                        <h1>The house Picked</h1>
+                        <button class="btn btn--3"></button>
+                        <button class="btn btn--2 btn-paper btn-paper--3">
+                            <span><img src="img/icon-paper.svg" alt="paper-icon"></span>
+                        </button>
+                        <button class="btn btn--2 btn-scissors btn-scissors--3">
+                            <span><img src="img/icon-scissors.svg" alt="paper-icon"></span>
+                        </button>
+                        <button class="btn btn--2 btn-rock btn-rock--3">
+                            <span><img src="img/icon-rock.svg" alt="paper-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>               
+        </nav>
+
+        <div class="icon__box--rules"><a href="#rules">Rules</a></div>
+    </main>
+
+    <script src="aos-master/aos.js"></script>
+    <script src="aos-master/init.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
